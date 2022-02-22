@@ -1,0 +1,4 @@
+- name: Download file from a file path
+  get_url:
+    url:
+    dest: "/home/ {{ user.name }}/image.jpg

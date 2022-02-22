@@ -1,0 +1,10 @@
+- name: Install Nginx Web Server
+  apt: 
+    pkg:
+      - nginx
+    state: latest
+  when:
+    ansible_os_family == "Debian"
+  notify:
+    - Nginx systemd
+

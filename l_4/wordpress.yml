@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+
+  vars_files:
+    - vars/wordpress.yml 
+    - vars/wordpress_vault.yml
+  roles:
+    - geerlingguy.nginx 
+    - geerlingguy.php
+    - geerlingguy.mysql
+    - wordpress
