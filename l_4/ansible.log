@@ -141,3 +141,56 @@ MSG:
 2022-02-22 19:26:01,321 p=37768 u=irik n=ansible | META: ran handlers
 2022-02-22 19:26:01,323 p=37768 u=irik n=ansible | PLAY RECAP *********************************************************************
 2022-02-22 19:26:01,323 p=37768 u=irik n=ansible | localhost                  : ok=6    changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-02-22 23:11:37,657 p=40846 u=irik n=ansible | ansible-playbook [core 2.12.2]
+  config file = /home/irik/ans/l_4/ansible.cfg
+  configured module search path = ['/home/irik/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/irik/.local/lib/python3.8/site-packages/ansible
+  ansible collection location = /home/irik/.ansible/collections:/usr/share/ansible/collections
+  executable location = /home/irik/.local/bin/ansible-playbook
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 3.0.3
+  libyaml = True
+2022-02-22 23:11:37,658 p=40846 u=irik n=ansible | Using /home/irik/ans/l_4/ansible.cfg as config file
+2022-02-22 23:11:37,663 p=40846 u=irik n=ansible | [WARNING]: Unable to parse /home/irik/ans/l_4/inventories/dev as an inventory
+source
+
+2022-02-22 23:11:37,663 p=40846 u=irik n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-02-22 23:11:37,665 p=40846 u=irik n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2022-02-22 23:11:37,892 p=40846 u=irik n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2022-02-22 23:11:37,893 p=40846 u=irik n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2022-02-22 23:11:37,941 p=40846 u=irik n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2022-02-22 23:11:37,942 p=40846 u=irik n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-02-22 23:11:37,942 p=40846 u=irik n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-02-22 23:11:37,943 p=40846 u=irik n=ansible | PLAYBOOK: 4.yml ****************************************************************
+2022-02-22 23:11:37,944 p=40846 u=irik n=ansible | 2 plays in 4.yml
+2022-02-22 23:11:37,946 p=40846 u=irik n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nginx
+
+2022-02-22 23:11:37,948 p=40846 u=irik n=ansible | PLAY [Deploy nginx] ************************************************************
+2022-02-22 23:11:37,948 p=40846 u=irik n=ansible | skipping: no hosts matched
+2022-02-22 23:11:38,035 p=40846 u=irik n=ansible | PLAY [Debug some bugs] *********************************************************
+2022-02-22 23:11:38,063 p=40846 u=irik n=ansible | TASK [Gathering Facts] *********************************************************
+2022-02-22 23:11:39,461 p=40846 u=irik n=ansible | ok: [localhost]
+2022-02-22 23:11:39,506 p=40846 u=irik n=ansible | META: ran handlers
+2022-02-22 23:11:39,543 p=40846 u=irik n=ansible | TASK [ddd : Place data to file] ************************************************
+2022-02-22 23:11:40,209 p=40846 u=irik n=ansible | ok: [localhost] => {
+    "changed": false,
+    "checksum": "fd52b864b1a52b2b19f3c760d65286f66a75dded",
+    "dest": "/tmp/root_dir1/data_file.txt",
+    "gid": 1002,
+    "group": "irik",
+    "mode": "0664",
+    "owner": "irik",
+    "path": "/tmp/root_dir1/data_file.txt",
+    "size": 50,
+    "state": "file",
+    "uid": 1001
+}
+2022-02-22 23:11:40,239 p=40846 u=irik n=ansible | META: role_complete for localhost
+2022-02-22 23:11:40,274 p=40846 u=irik n=ansible | META: 
+2022-02-22 23:11:40,308 p=40846 u=irik n=ansible | META: ran handlers
+2022-02-22 23:11:40,346 p=40846 u=irik n=ansible | META: ran handlers
+2022-02-22 23:11:40,349 p=40846 u=irik n=ansible | PLAY RECAP *********************************************************************
+2022-02-22 23:11:40,349 p=40846 u=irik n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
