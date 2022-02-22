@@ -1,0 +1,143 @@
+
+
+2022-02-22 19:14:27,686 p=37492 u=irik n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2022-02-22 19:14:28,216 p=37492 u=irik n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2022-02-22 19:14:28,223 p=37492 u=irik n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2022-02-22 19:14:28,264 p=37492 u=irik n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2022-02-22 19:14:28,264 p=37492 u=irik n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-02-22 19:14:28,264 p=37492 u=irik n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-02-22 19:14:28,264 p=37492 u=irik n=ansible | PLAYBOOK: 4.yml ****************************************************************
+2022-02-22 19:14:28,264 p=37492 u=irik n=ansible | 2 plays in 4.yml
+2022-02-22 19:14:28,265 p=37492 u=irik n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nginx
+
+2022-02-22 19:14:28,266 p=37492 u=irik n=ansible | PLAY [Deploy nginx] ************************************************************
+2022-02-22 19:14:28,266 p=37492 u=irik n=ansible | skipping: no hosts matched
+2022-02-22 19:14:28,334 p=37492 u=irik n=ansible | PLAY [Debug some bugs] *********************************************************
+2022-02-22 19:14:28,390 p=37492 u=irik n=ansible | TASK [Gathering Facts] *********************************************************
+2022-02-22 19:14:29,878 p=37492 u=irik n=ansible | ok: [localhost]
+2022-02-22 19:14:29,913 p=37492 u=irik n=ansible | META: ran handlers
+2022-02-22 19:14:29,956 p=37492 u=irik n=ansible | TASK [ddd : Check values] ******************************************************
+2022-02-22 19:14:29,983 p=37492 u=irik n=ansible | fatal: [localhost]: FAILED! => {}
+
+MSG:
+
+The task includes an option with an undefined variable. The error was: 'root_dir' is undefined
+
+The error appears to be in '/home/irik/ans/l_4/roles/ddd/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Check values
+  ^ here
+
+
+2022-02-22 19:14:29,987 p=37492 u=irik n=ansible | PLAY RECAP *********************************************************************
+2022-02-22 19:14:29,987 p=37492 u=irik n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-02-22 19:25:57,670 p=37768 u=irik n=ansible | ansible-playbook [core 2.12.2]
+  config file = /home/irik/ans/l_4/ansible.cfg
+  configured module search path = ['/home/irik/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/irik/.local/lib/python3.8/site-packages/ansible
+  ansible collection location = /home/irik/.ansible/collections:/usr/share/ansible/collections
+  executable location = /home/irik/.local/bin/ansible-playbook
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 3.0.3
+  libyaml = True
+2022-02-22 19:25:57,670 p=37768 u=irik n=ansible | Using /home/irik/ans/l_4/ansible.cfg as config file
+2022-02-22 19:25:57,673 p=37768 u=irik n=ansible | [WARNING]: Unable to parse /home/irik/ans/l_4/inventories/dev as an inventory
+source
+
+2022-02-22 19:25:57,673 p=37768 u=irik n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-02-22 19:25:57,676 p=37768 u=irik n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2022-02-22 19:25:57,891 p=37768 u=irik n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2022-02-22 19:25:57,895 p=37768 u=irik n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2022-02-22 19:25:57,906 p=37768 u=irik n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2022-02-22 19:25:57,906 p=37768 u=irik n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-02-22 19:25:57,906 p=37768 u=irik n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-02-22 19:25:57,906 p=37768 u=irik n=ansible | PLAYBOOK: 4.yml ****************************************************************
+2022-02-22 19:25:57,906 p=37768 u=irik n=ansible | 2 plays in 4.yml
+2022-02-22 19:25:57,907 p=37768 u=irik n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nginx
+
+2022-02-22 19:25:57,907 p=37768 u=irik n=ansible | PLAY [Deploy nginx] ************************************************************
+2022-02-22 19:25:57,907 p=37768 u=irik n=ansible | skipping: no hosts matched
+2022-02-22 19:25:57,973 p=37768 u=irik n=ansible | PLAY [Debug some bugs] *********************************************************
+2022-02-22 19:25:58,003 p=37768 u=irik n=ansible | TASK [Gathering Facts] *********************************************************
+2022-02-22 19:25:59,206 p=37768 u=irik n=ansible | ok: [localhost]
+2022-02-22 19:25:59,234 p=37768 u=irik n=ansible | META: ran handlers
+2022-02-22 19:25:59,269 p=37768 u=irik n=ansible | TASK [ddd : Check values] ******************************************************
+2022-02-22 19:25:59,314 p=37768 u=irik n=ansible | ok: [localhost] => {
+    "changed": false
+}
+
+MSG:
+
+'root_dir' is /tmp/root_dir1
+
+2022-02-22 19:25:59,348 p=37768 u=irik n=ansible | TASK [ddd : Create root directory] *********************************************
+2022-02-22 19:25:59,699 p=37768 u=irik n=ansible | changed: [localhost] => {
+    "changed": true,
+    "gid": 1002,
+    "group": "irik",
+    "mode": "0775",
+    "owner": "irik",
+    "path": "/tmp/root_dir1",
+    "size": 4096,
+    "state": "directory",
+    "uid": 1001
+}
+2022-02-22 19:25:59,733 p=37768 u=irik n=ansible | TASK [ddd : Print directory output] ********************************************
+2022-02-22 19:25:59,799 p=37768 u=irik n=ansible | skipping: [localhost] => {}
+2022-02-22 19:25:59,834 p=37768 u=irik n=ansible | TASK [ddd : Place data to file] ************************************************
+2022-02-22 19:26:00,466 p=37768 u=irik n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "fd52b864b1a52b2b19f3c760d65286f66a75dded",
+    "dest": "/tmp/root_dir1/data_file.txt",
+    "gid": 1002,
+    "group": "irik",
+    "md5sum": "a6d4400f5a71be5511eaf440b7a720a3",
+    "mode": "0664",
+    "owner": "irik",
+    "size": 50,
+    "src": "/home/irik/.ansible/tmp/ansible-tmp-1645547159.8678617-37887-27244589268743/source",
+    "state": "file",
+    "uid": 1001
+}
+2022-02-22 19:26:00,497 p=37768 u=irik n=ansible | META: role_complete for localhost
+2022-02-22 19:26:00,534 p=37768 u=irik n=ansible | TASK [place_file : Create /tmp/root_dir1] **************************************
+2022-02-22 19:26:00,756 p=37768 u=irik n=ansible | ok: [localhost] => {
+    "changed": false,
+    "gid": 1002,
+    "group": "irik",
+    "mode": "0775",
+    "owner": "irik",
+    "path": "/tmp/root_dir1",
+    "size": 4096,
+    "state": "directory",
+    "uid": 1001
+}
+2022-02-22 19:26:00,787 p=37768 u=irik n=ansible | TASK [place_file : Place some file to /tmp/root_dir1] **************************
+2022-02-22 19:26:01,174 p=37768 u=irik n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "9bfa1df29e36853cedff3c3bc007f9f410764432",
+    "dest": "/tmp/root_dir1/placed_file.cfg",
+    "gid": 1002,
+    "group": "irik",
+    "md5sum": "b96a708a8588d8857d295f9420cc3c91",
+    "mode": "0664",
+    "owner": "irik",
+    "size": 24,
+    "src": "/home/irik/.ansible/tmp/ansible-tmp-1645547160.8209703-37954-197062086379035/source",
+    "state": "file",
+    "uid": 1001
+}
+2022-02-22 19:26:01,203 p=37768 u=irik n=ansible | META: role_complete for localhost
+2022-02-22 19:26:01,261 p=37768 u=irik n=ansible | META: ran handlers
+2022-02-22 19:26:01,321 p=37768 u=irik n=ansible | META: ran handlers
+2022-02-22 19:26:01,323 p=37768 u=irik n=ansible | PLAY RECAP *********************************************************************
+2022-02-22 19:26:01,323 p=37768 u=irik n=ansible | localhost                  : ok=6    changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
