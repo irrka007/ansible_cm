@@ -1,0 +1,9 @@
+server {
+    listen *:80;
+    server_name     {{ vhost_name }};
+    root            {{ vhost_root }};
+
+    location / {
+        return 200 "OK";
+    }
+}

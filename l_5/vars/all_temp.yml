@@ -1,0 +1,13 @@
+---
+vhost_p:
+  - vhost_path_a: /etc/nginx/conf.d/admin-lb.rebrain.net.conf
+  - vhost_path_u: /etc/nginx/conf.d/user-db.rebrain.net.conf
+
+vhost_r:
+  vhost_root_a: "/var/www/www.admin-lb.rebrain.net"
+  vhost_root_u: "/var/www/www.user-db.rebrain.net"
+
+vhost_n:
+  vhost_name_a: "admin-lb.rebrain.net.conf"
+  vhost_name_u: "user-lb.rebrain.net.conf"
+ 
