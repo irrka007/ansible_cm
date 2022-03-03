@@ -1,5 +1,5 @@
 ---
-- src: https://github.com/geerlingguy/ansible-rple-mysql.git
+- src: https://github.com/geerlingguy/ansible-role-nginx.git
   scm: git
   version: master
-  name: ansible-role-mysql
+  name: geerlingguy.nginx
