@@ -1,0 +1,7 @@
+- name: Do tests
+  hosts: all
+  become: true
+  vars_files:
+    - vars/wordpress_vault.yml
+  roles:
+    - { role: tests, tags: [tests] }

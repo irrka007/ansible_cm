@@ -1,0 +1,43 @@
+2022-03-03 23:34:26,247 p=69761 u=irik n=ansible | ansible-playbook [core 2.12.2]
+  config file = /home/irik/ans/l_6/ansible.cfg
+  configured module search path = ['/home/irik/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/irik/.local/lib/python3.8/site-packages/ansible
+  ansible collection location = /home/irik/.ansible/collections:/usr/share/ansible/collections
+  executable location = /home/irik/.local/bin/ansible-playbook
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 3.0.3
+  libyaml = True
+2022-03-03 23:34:26,247 p=69761 u=irik n=ansible | Using /home/irik/ans/l_6/ansible.cfg as config file
+2022-03-03 23:34:26,271 p=69761 u=irik n=ansible | host_list declined parsing /home/irik/ans/l_6/inventories/dev/hosts.yml as it did not pass its verify_file() method
+2022-03-03 23:34:26,271 p=69761 u=irik n=ansible | script declined parsing /home/irik/ans/l_6/inventories/dev/hosts.yml as it did not pass its verify_file() method
+2022-03-03 23:34:26,285 p=69761 u=irik n=ansible | Parsed /home/irik/ans/l_6/inventories/dev/hosts.yml inventory source with ini plugin
+2022-03-03 23:34:26,697 p=69761 u=irik n=ansible | redirecting (type: modules) ansible.builtin.mysql_user to community.mysql.mysql_user
+2022-03-03 23:34:26,715 p=69761 u=irik n=ansible | redirecting (type: modules) ansible.builtin.mysql_user to community.mysql.mysql_user
+2022-03-03 23:34:26,716 p=69761 u=irik n=ansible | redirecting (type: modules) ansible.builtin.mysql_db to community.mysql.mysql_db
+2022-03-03 23:34:26,716 p=69761 u=irik n=ansible | redirecting (type: modules) ansible.builtin.mysql_db to community.mysql.mysql_db
+2022-03-03 23:34:26,717 p=69761 u=irik n=ansible | redirecting (type: modules) ansible.builtin.mysql_user to community.mysql.mysql_user
+2022-03-03 23:34:26,738 p=69761 u=irik n=ansible | statically imported: /home/irik/ans/l_6/external_roles/geerlingguy.nginx/tasks/vhosts.yml
+2022-03-03 23:34:26,767 p=69761 u=irik n=ansible | Read vars_file 'vars/wordpress_vault.yml'
+2022-03-03 23:34:26,799 p=69761 u=irik n=ansible | Read vars_file 'vars/wordpress_vault.yml'
+2022-03-03 23:34:26,829 p=69761 u=irik n=ansible | Read vars_file 'vars/wordpress_vault.yml'
+2022-03-03 23:34:26,858 p=69761 u=irik n=ansible | Read vars_file 'vars/wordpress_vault.yml'
+2022-03-03 23:34:26,899 p=69761 u=irik n=ansible | Read vars_file 'vars/wordpress_vault.yml'
+2022-03-03 23:34:26,920 p=69761 u=irik n=ansible | Read vars_file 'vars/wordpress_vault.yml'
+2022-03-03 23:34:26,928 p=69761 u=irik n=ansible | redirecting (type: modules) ansible.builtin.mysql_db to community.mysql.mysql_db
+2022-03-03 23:34:26,967 p=69761 u=irik n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2022-03-03 23:34:26,967 p=69761 u=irik n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-03-03 23:34:26,967 p=69761 u=irik n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-03-03 23:34:26,968 p=69761 u=irik n=ansible | PLAYBOOK: playbook.yml *********************************************************
+2022-03-03 23:34:26,968 p=69761 u=irik n=ansible | 5 plays in playbook.yml
+2022-03-03 23:34:26,969 p=69761 u=irik n=ansible | PLAY [Prepare user] ************************************************************
+2022-03-03 23:34:27,005 p=69761 u=irik n=ansible | TASK [Gathering Facts] *********************************************************
+2022-03-03 23:34:27,066 p=69767 u=irik n=ansible | <127.0.0.1> ESTABLISH SSH CONNECTION FOR USER: irik
+2022-03-03 23:34:27,068 p=69767 u=irik n=ansible | <127.0.0.1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="irik"' -o ConnectTimeout=10 -o 'ControlPath="/home/irik/.ansible/cp/96aaa154c3"' 127.0.0.1 '/bin/sh -c '"'"'echo ~irik && sleep 0'"'"''
+2022-03-03 23:34:27,108 p=69767 u=irik n=ansible | <127.0.0.1> (255, b'', b'ssh: connect to host 127.0.0.1 port 22: Connection refused\r\n')
+2022-03-03 23:34:27,118 p=69761 u=irik n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused",
+    "unreachable": true
+}
+2022-03-03 23:34:27,125 p=69761 u=irik n=ansible | PLAY RECAP *********************************************************************
+2022-03-03 23:34:27,126 p=69761 u=irik n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
